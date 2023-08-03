@@ -627,3 +627,12 @@ footer
 .services_carousel .owl-nav { position: relative; top: -130px; width: calc(100% + 80px); left: -40px; z-index: -1; display: flex; justify-content: space-between; }
   .services_carousel .owl-nav > * { font-size: 50px; color: #0cb8b6; }
   .services_carousel .owl-nav > *:hover { color: #1bdfdd; }
+
+#contact .flex { display: flex; flex-direction: column; }
+  #contact .flex > * { display: flex; align-items: center; margin-top: 10px; }
+    #contact .flex > * i { margin-right: 5px; }
+
+#footer .social { display: flex; flex-direction: column; align-items: center; text-align: center; }
+  #footer .social > h4 { margin: 0px 0 28px 0; }
+  #footer .social .info-sec { display: block; }
+  #footer .social .social-icon { padding: 0; }
