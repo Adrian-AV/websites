@@ -87,8 +87,12 @@ banner
 }
 
 .navbar-brand img {
-    padding-top: 2px;
-    width: 120px !important;
+    margin-top: -38px;
+    width: 120px;
+}
+.navbar.top-nav-collapse .navbar-brand img {
+    margin-top: -19px;
+    width: 58px;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
