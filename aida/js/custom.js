@@ -28,18 +28,20 @@
     }
   });
 
-  $('section#services .services_carousel').owlCarousel({
-    "items": 3,
-    "nav": true,
-    "navText": [
-      '<i class="far fa-angle-left"></i>',
-      '<i class="far fa-angle-right"></i>'
-    ],
-    "responsive": {
-      768: {"items": 3},
-      559: {"items": 2},
-      0: {"items": 1},
-    }
-  });
+  if (!is_mobile() && $(window).width() >= 768) {
+    $('section#services .services_carousel').owlCarousel({
+      "items": 3,
+      "nav": true,
+      "navText": [
+        '<i class="far fa-angle-left"></i>',
+        '<i class="far fa-angle-right"></i>'
+      ],
+      "responsive": {
+        768: {"items": 3},
+        559: {"items": 2},
+        0: {"items": 1},
+      }
+    });
+  }
 
 })(jQuery);

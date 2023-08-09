@@ -640,3 +640,32 @@ footer
   #footer .social > h4 { margin: 0px 0 28px 0; }
   #footer .social .info-sec { display: block; }
   #footer .social .social-icon { padding: 0; }
+
+@media (max-width: 768px) {
+  .services_carousel { display: flex; flex-wrap: wrap; justify-content: center; }
+    .services_carousel > * { flex-basis: calc(50% - 10px); }
+
+  .service-info { width: calc(50% - 15px); display: inline-block; margin-bottom: 0; margin-top: 20px;}
+    .service-info:nth-child(1) { margin-right: 20px; }
+
+  .ser-title, .head-title { text-align: center; }
+  hr.botm-line { margin: 20px auto; }
+
+  #contact { text-align: center; }
+    #contact .flex { align-items: center; margin-bottom: 50px; }
+      #contact .flex h3 { display: none; }
+}
+
+@media (max-width: 544px) {
+  .services_carousel > * { flex-basis: 100%; margin: 5px 0; }
+  .banner-info { padding-left: 20px; padding-right: 20px; }
+}
+
+@media (max-width: 442px) {
+  .service-info { width: 100%; margin-right: 0; text-align: center; }
+  #doctor-team .col-xs-6 { padding: 0 5px; }
+}
+
+@media (max-width: 360px) {
+  #doctor-team .col-xs-6 { width: 100%; }
+}
